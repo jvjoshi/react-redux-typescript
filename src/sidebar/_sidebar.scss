@@ -1,0 +1,42 @@
+.sidebar-container {
+    font-size: 1.4rem;
+    border-right: 1px solid $secondary-background;
+    min-width: 25rem;
+    max-width: 25rem;
+    margin-left: -25rem;
+    transition: margin 0.3s ease-in-out; 
+
+    &.open {
+        margin-left: 0;
+    }
+}
+.sidebar-title {
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-family: bold;
+    background-color: $highlight;
+    padding: 1rem;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+}
+
+.sidebar-item-container {
+    padding: 1rem;
+    cursor: pointer;
+    &:hover {
+        background-color: $secondary-background;
+    }
+
+    &.active {
+        background-color: $highlight;
+    }
+}
+
+.sidebar-item-icon {
+    font-size: 1.5rem;
+    width: 2rem;
+}
+
+.sidebar-item-text {
+    margin-left: 2.5rem;
+}

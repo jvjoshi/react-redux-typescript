@@ -1,0 +1,29 @@
+main {
+    display: flex;
+
+    .content {
+        background-color: $secondary-background;
+        width: 100vw;
+        transition: width 0.3s ease-in-out;
+        &.sidebar-open {
+            width: calc(100vw - 25rem);
+        }
+    }
+
+    .add {
+        position: absolute;
+        bottom: 1rem;
+        right: 4rem;
+        width: 4rem;
+        height: 4rem;
+        background: $action-btn;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+        color: $white;
+    }
+}
+
+
